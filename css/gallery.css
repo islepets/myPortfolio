@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    background-color: #333840;
+    font-family: "Vollkorn", serif;
+    font-weight: 500;
+}
+
+/* Шапка */
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: auto;
+    font-size: 14px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 1140px;
+    position: absolute;
+    background-color: #333840;
+    background-image:
+        linear-gradient(90deg, #333840, transparent 90%, transparent 10%, #333840, #c778dd),
+        linear-gradient(0deg, #333840, transparent 90%, transparent 10%, #333840, #c778dd);
+    background-size: 21px 21px;
+}
+
+.header-logo img {
+    height: 180px;
+    width: 180px;
+}
+
+.header-navigation a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.header-navigation a:hover {
+    background-color: #282c33;
+    outline: 2px solid #c778dd;
+    color: #c778dd;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.hesh {
+    font-weight: bold;
+    font-size: 20px;
+    color: #c778dd;
+}
+
+/* Тело */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+    height: auto;
+}
+
+.main-container {
+    width: 1140px;
+    background-color: #333840;
+    height: auto;
+    position: relative;
+    padding: 0;
+}
+
+.gallery {
+    margin-left: 225px;
+    position: relative;
+    width: 700px;
+    height: 490px;
+    border: 5px solid #c778dd;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    perspective: 1000px;
+}
+
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cube {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    perspective: 800px;
+}
+
+.top img {
+    width: 690px;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+    object-position: top;
+    backface-visibility: hidden;
+    margin-bottom: -6px;
+}
+
+
+.bottom img {
+    width: 690px;
+    height: auto;
+    max-height: 235px;
+    object-fit: cover;
+    object-position: bottom;
+    backface-visibility: hidden;
+    margin-top: -6px;
+}
+
+.top {
+    transition: transform 1s ease;
+    transform-origin: center bottom;
+}
+
+.bottom {
+    transition: transform 1s ease;
+    transform-origin: center top;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #c778dd;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    padding: 13px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@keyframes rotateTop {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+@keyframes rotateBottom {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.top {
+    animation: none;
+}
+
+.bottom {
+    animation: none;
+}
+
+/*Футер*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 16px;
+}
+
+.footer-container {
+    width: 1140px;
+    background-color: #333840;
+    height: 150px;
+    position: relative;
+}
+
+#foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#copy {
+    color: white;
+    margin-top: -40px;
+}
+
+.footer-navigation a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.footer-navigation a:hover {
+    color: #c778dd;
+    transition: color 0.5s;
+}
+
+.footer-logo img {
+    height: 130px;
+    width: 130px;
+}

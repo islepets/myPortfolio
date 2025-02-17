@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    background-color: #333840;
+    font-family: "Vollkorn", serif;
+    font-weight: 500;
+}
+
+/* Шапка */
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: auto;
+    font-size: 14px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 1140px;
+    position: absolute;
+    background-color: #333840;
+    background-image:
+        linear-gradient(90deg, #333840, transparent 90%, transparent 10%, #333840, #c778dd),
+        linear-gradient(0deg, #333840, transparent 90%, transparent 10%, #333840, #c778dd);
+    background-size: 21px 21px;
+}
+
+.header-logo img {
+    height: 180px;
+    width: 180px;
+}
+
+.header-navigation a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.header-navigation a:hover {
+    background-color: #282c33;
+    outline: 2px solid #c778dd;
+    color: #c778dd;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.hesh {
+    font-weight: bold;
+    font-size: 20px;
+    color: #c778dd;
+}
+
+/* Тело */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+    height: auto;
+}
+
+.main-container {
+    width: 1140px;
+    background-color: #333840;
+    height: auto;
+    position: relative;
+    padding: 0;
+}
+
+.h1-class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 32px;
+}
+
+.hash{
+    color: #c778dd;
+}
+
+.two-colomn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+
+.column {
+    background-color: #444950;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.column p {
+    color: white;
+    margin-top: 10px;
+}
+
+
+/*Футер*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 16px;
+}
+
+.footer-container {
+    width: 1140px;
+    background-color: #333840;
+    height: 150px;
+    position: relative;
+}
+
+#foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#copy {
+    color: white;
+    margin-top: -40px;
+}
+
+.footer-navigation a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.footer-navigation a:hover {
+    color: #c778dd;
+    transition: color 0.5s;
+}
+
+.footer-logo img {
+    height: 130px;
+    width: 130px;
+}
