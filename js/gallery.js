@@ -8,7 +8,6 @@ function changeSlide(direction) {
 
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-    // Показываем текущий слайд
     slides[currentSlide].style.display = 'flex';
 
     const top = slides[currentSlide].querySelector('.top');

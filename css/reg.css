@@ -73,49 +73,76 @@ main {
     padding: 0;
 }
 
-.h1-class{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.transparent {
+    position: relative;
+    max-width: 400px;
+    padding: 60px 50px;
+    margin: 100px auto 100px;
+    background-image: url(../img/5113586.jpg);
+    background-size: cover;
 }
 
-h1{
+.transparent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right bottom, rgba(43, 44, 78, .5), rgba(104, 22, 96, .5));
+}
+
+.form-inner {
+    position: relative;
+}
+
+.form-inner h1 {
+    position: relative;
+    margin-top: 0;
     color: white;
-    font-size: 32px;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
-.hash{
-    color: #c778dd;
+.form-inner h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 60px;
+    background-color: #c778dd;
 }
 
-.two-colomn {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 20px 0;
+.form-inner label{
+    display: block;
+    padding-left: 15px;
+    color: rgba(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-
-.column {
-    background-color: #444950;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
-}
-
-.column img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.column p {
+.form-inner input{
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
     color: white;
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, .2);
 }
 
+.form-inner a{
+    display: block;
+    text-transform: uppercase;
+    color: blue;
+}
+.form-inner input[type="submit"]{
+    background-color: #c778dd;
+    text-transform: uppercase;
+}
 
 /*Футер*/
 footer {
